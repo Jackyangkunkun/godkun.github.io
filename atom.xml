@@ -17,8 +17,8 @@
   
   <entry>
     <title>彻底征服闭包定义、特点、价值、用法</title>
-    <link href="http://yoursite.com/2017/04/10/2017-04-10-%E5%BD%BB%E5%BA%95%E5%BE%81%E6%9C%8D%E9%97%AD%E5%8C%85%20-%20%E5%89%AF%E6%9C%AC/"/>
-    <id>http://yoursite.com/2017/04/10/2017-04-10-彻底征服闭包 - 副本/</id>
+    <link href="http://yoursite.com/2017/04/10/2017-04-10-%E5%BD%BB%E5%BA%95%E5%BE%81%E6%9C%8D%E9%97%AD%E5%8C%85/"/>
+    <id>http://yoursite.com/2017/04/10/2017-04-10-彻底征服闭包/</id>
     <published>2017-04-09T16:00:00.000Z</published>
     <updated>2017-06-12T08:59:09.488Z</updated>
     
@@ -98,6 +98,304 @@
     
     
       <category term="运营" scheme="http://yoursite.com/tags/%E8%BF%90%E8%90%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何写好一个竞品分析</title>
+    <link href="http://yoursite.com/2016/10/10/%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BD%E4%B8%80%E4%B8%AA%E7%AB%9E%E5%93%81%E5%88%86%E6%9E%90/"/>
+    <id>http://yoursite.com/2016/10/10/如何写好一个竞品分析/</id>
+    <published>2016-10-09T16:00:00.000Z</published>
+    <updated>2017-06-16T04:06:12.659Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="产品概况"><a href="#产品概况" class="headerlink" title="产品概况"></a>产品概况</h3><h4 id="产品简介"><a href="#产品简介" class="headerlink" title="产品简介"></a>产品简介</h4><p>用一个表格就可以搞定</p>
+<table>
+<thead>
+<tr>
+<th>产品名称</th>
+<th style="text-align:right">上线时间（web）</th>
+<th style="text-align:center">当前版本</th>
+<th>迭代版本</th>
+<th>体验环境</th>
+<th>slogan（标语）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>竞品A</td>
+<td style="text-align:right"></td>
+<td style="text-align:center"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>竞品B</td>
+<td style="text-align:right"></td>
+<td style="text-align:center"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>竞品C</td>
+<td style="text-align:right"></td>
+<td style="text-align:center"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="下载量"><a href="#下载量" class="headerlink" title="下载量"></a>下载量</h4><p>同样一个表格<br><a id="more"></a></p>
+<table>
+<thead>
+<tr>
+<th>产品名称</th>
+<th style="text-align:right">Android下载量</th>
+<th style="text-align:center">IOS下载量</th>
+<th>Android近7日日均下载</th>
+<th>IOS近7日日均下载量 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>竞品A</td>
+<td style="text-align:right"></td>
+<td style="text-align:center"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>竞品B</td>
+<td style="text-align:right"></td>
+<td style="text-align:center"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>竞品C</td>
+<td style="text-align:right"></td>
+<td style="text-align:center"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="需求图谱"><a href="#需求图谱" class="headerlink" title="需求图谱"></a>需求图谱</h4><h4 id="搜索指数概况和趋势"><a href="#搜索指数概况和趋势" class="headerlink" title="搜索指数概况和趋势"></a>搜索指数概况和趋势</h4><p>用表格把指数概况表示出来，再用一个表格把指数趋势表示出来。</p>
+<hr>
+<h3 id="市场分析"><a href="#市场分析" class="headerlink" title="市场分析"></a>市场分析</h3><h4 id="市场规模"><a href="#市场规模" class="headerlink" title="市场规模"></a>市场规模</h4><p>用表格，比如直方图配合折线图来显示特定时间段的用户规模以及增长率。</p>
+<p>再将所得的规模数据与当前具有标准的规模进行比较，比如中国网名数量，移动端网名数量，来进行百分比对比。</p>
+<h4 id="市场前景"><a href="#市场前景" class="headerlink" title="市场前景"></a>市场前景</h4><h3 id="用户分析"><a href="#用户分析" class="headerlink" title="用户分析"></a>用户分析</h3><h4 id="用户画像"><a href="#用户画像" class="headerlink" title="用户画像"></a>用户画像</h4><ol>
+<li>年龄和性别信息</li>
+<li>地域分布</li>
+</ol>
+<h4 id="核心用户和主流用户"><a href="#核心用户和主流用户" class="headerlink" title="核心用户和主流用户"></a>核心用户和主流用户</h4><p>核心用户：指对产品的发展做出贡献的忠实用户。   用户占比比较小，却很重要。</p>
+<p>主流用户：是指消费产品内容和功能的用户。       用户占比非常大。</p>
+<p>对每个竞品进行核心用户和主流用户分析。</p>
+<hr>
+<h3 id="功能分析"><a href="#功能分析" class="headerlink" title="功能分析"></a>功能分析</h3><h4 id="基本功能"><a href="#基本功能" class="headerlink" title="基本功能"></a>基本功能</h4><h4 id="核心功能对比"><a href="#核心功能对比" class="headerlink" title="核心功能对比"></a>核心功能对比</h4><h4 id="部分功能测试"><a href="#部分功能测试" class="headerlink" title="部分功能测试"></a>部分功能测试</h4><h4 id="关键功能流程"><a href="#关键功能流程" class="headerlink" title="关键功能流程"></a>关键功能流程</h4><p>把每个竞品的功能页面图截取出来放在一起–&gt;<strong>再用</strong>一个流程图去集中表示过程–&gt;<strong>然后</strong>对每个竞品的关键功能流程进行分析，一次列项表示出来–&gt;<strong>最后</strong>进行流程总述</p>
+<p>提示：一般必须关注登录注册流程。</p>
+<h4 id="创新功能"><a href="#创新功能" class="headerlink" title="创新功能"></a>创新功能</h4><p>列出每个竞品的创新功能，并加以分析评价。</p>
+<h3 id="交互视觉设计"><a href="#交互视觉设计" class="headerlink" title="交互视觉设计"></a>交互视觉设计</h3><h4 id="交互设计"><a href="#交互设计" class="headerlink" title="交互设计"></a>交互设计</h4><p>分析每个竞品在交互设计上都有什么突出表现。具体突出表现是什么，依次对竞品进行分析。</p>
+<h4 id="视觉设计"><a href="#视觉设计" class="headerlink" title="视觉设计"></a>视觉设计</h4><p>对每个竞品进行分析。<br>例如先对竞品A分析，在一个框架内，列出竞品A的主要页面设计截图。<br>最后对每个竞品的<strong>整体风格、排版设计、icon设计、竞品主图、字体字号</strong>进行总结。</p>
+<hr>
+<h3 id="运营分析"><a href="#运营分析" class="headerlink" title="运营分析"></a>运营分析</h3><h4 id="内容运营"><a href="#内容运营" class="headerlink" title="内容运营"></a>内容运营</h4><p>何为内容运营？<br>大致为如下解释：<br><strong>采集与创造</strong>——（内容的生产者来完成，可能是用户，也可能是产品本身）<br><strong>呈现与管理</strong>——（主要是产品本身来完成）<br><strong>扩散与传导</strong>——（由用户和产品本身共同完成，比如分享）<br><strong>效果与评估</strong>——（由用户和产品本身共同完成，比如用户点赞评论反馈，产品本身对内容的审核等）<br>对每个竞品进行内容运营分析<br>比如对竞品A进行分析：<br>在一个框架内列出三个区域，依次为：<br>内容生产者<br>产品本身<br>内容消费者</p>
+<h4 id="用户运营"><a href="#用户运营" class="headerlink" title="用户运营"></a>用户运营</h4><p>何为用户运营？<br>“用户运营”对于一个产品来说尤为重要，它的主要内容包括：<br>拉新用户<br>维护老用户活跃度<br>建立用户流失预警机制<br>对已流失的用户进行挽回<br>促进用户付费</p>
+<h4 id="活动运营"><a href="#活动运营" class="headerlink" title="活动运营"></a>活动运营</h4><h4 id="渠道运营"><a href="#渠道运营" class="headerlink" title="渠道运营"></a>渠道运营</h4><hr>
+<h3 id="产品评价"><a href="#产品评价" class="headerlink" title="产品评价"></a>产品评价</h3><h4 id="应用商店评价"><a href="#应用商店评价" class="headerlink" title="应用商店评价"></a>应用商店评价</h4><p>比如安卓平均评分、IOS平均评分，安卓总评论人数，IOS总评论人数，然后对其进行分析总结</p>
+<p>去应用商店评论去收集好评，和差评的具体内容，去挖掘产品问题然后去改进。</p>
+<h4 id="百度、微博、知乎评价"><a href="#百度、微博、知乎评价" class="headerlink" title="百度、微博、知乎评价"></a>百度、微博、知乎评价</h4><p>分别进行评价汇总</p>
+<p>最后关于竞品分析的几点个人思考</p>
+<p>1：通过对网上各路大牛竞品分析的相关文章，案例的研究，总结了自己的一套竞品分析流程。<br>2：分析尽可能通俗易懂，不搞什么专业术语，好像逼格很高的样子，其实空洞乏味。<br>3：这个竞品分析模版主要是研究产品本身，大篇幅分析功能设计，然后按照产品运营的思路进行了运营分析。<br>4：真正项目的竞品分析，是有目的，有针对性的，不同的阶段竞品分析的意义也不同，所以不要盲目跟随别人的竞品分析模板。<br>5：这套竞品分析中的数据来源于“百度指数”和“ASO100”，为什么没有选大家习惯用的“易观千帆”，“艾瑞数据”，”TalkingData”或者是“baiduMOTA”这些看起来可能专业的数据分析平台，对比了一下这些平台上的数据，大方向差不多，但是数据相差甚远，比如产品用户的性别属性，差30%的都有。反正吧，最终衡量选择了“百度指数”，虽然不能准确反映APP的具体数据，但是或许可以反映APP的真是情况。<br>6：“竞品分析”是主观和客观的结合，所以你认为的可以是你认为的，你认为的不一定是你认为的，辩证看待。<br>7：竞品分析要注重分析方法。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;产品概况&quot;&gt;&lt;a href=&quot;#产品概况&quot; class=&quot;headerlink&quot; title=&quot;产品概况&quot;&gt;&lt;/a&gt;产品概况&lt;/h3&gt;&lt;h4 id=&quot;产品简介&quot;&gt;&lt;a href=&quot;#产品简介&quot; class=&quot;headerlink&quot; title=&quot;产品简介&quot;&gt;&lt;/a&gt;产品简介&lt;/h4&gt;&lt;p&gt;用一个表格就可以搞定&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;产品名称&lt;/th&gt;
+&lt;th style=&quot;text-align:right&quot;&gt;上线时间（web）&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;当前版本&lt;/th&gt;
+&lt;th&gt;迭代版本&lt;/th&gt;
+&lt;th&gt;体验环境&lt;/th&gt;
+&lt;th&gt;slogan（标语）&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;竞品A&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;竞品B&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;竞品C&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&quot;下载量&quot;&gt;&lt;a href=&quot;#下载量&quot; class=&quot;headerlink&quot; title=&quot;下载量&quot;&gt;&lt;/a&gt;下载量&lt;/h4&gt;&lt;p&gt;同样一个表格&lt;br&gt;
+    
+    </summary>
+    
+      <category term="产品经理" scheme="http://yoursite.com/categories/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
+    
+    
+      <category term="竞品分析" scheme="http://yoursite.com/tags/%E7%AB%9E%E5%93%81%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>必须知道的产品经理专业术语</title>
+    <link href="http://yoursite.com/2016/10/03/%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%84%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E4%B8%93%E4%B8%9A%E6%9C%AF%E8%AF%AD/"/>
+    <id>http://yoursite.com/2016/10/03/必须知道的产品经理专业术语/</id>
+    <published>2016-10-02T16:00:00.000Z</published>
+    <updated>2017-06-16T02:27:27.301Z</updated>
+    
+    <content type="html"><![CDATA[<p>MRD：Market Requirements Document (市场需求文档)</p>
+<p>PRD：Product Requirements Document (产品需求文档)</p>
+<p><strong>注意：MRD和PRD互为因果，有了输入MRD才能有输出PRD</strong></p>
+<p>KPI：Key Performance Indicator(关键绩效指标)</p>
+<p>PV：page view(页面浏览量)</p>
+<p>UV：unique visitor(独立IP)<br><a id="more"></a></p>
+<p>FSD：Functional Specifications Document (功能详细说明文档)</p>
+<p>C2C：Consumer to Consumer(顾客对顾客)</p>
+<p>B2B：Business to Business(商家对商家)</p>
+<p>O2O：Online to Offline(线上线下电子商务)</p>
+<p>P2P：person to person</p>
+<p>B2C：Business to Consumer(商家对个人)</p>
+<p>UCD：User Centered Design(以用户为中心的设计)</p>
+<p>SNS：Social Networking Services(社会性网络服务)</p>
+<p>IM：Instant Messaging(即时通信)</p>
+<p>JD：Job Descriptions(职位描述)</p>
+<p>LBS：Location Based Service(基于位置的服务)</p>
+<p>RSS：Really Simple Syndication(简易信息聚合)</p>
+<hr>
+<p>SDK：Software Development Kit(软件开发工具包)</p>
+<p>DAU：Daily Active User(日活跃用户量)</p>
+<p>OTA：Online Travel Agent(在线旅行社)</p>
+<p>UX：User Experience Design(用户体验)</p>
+<p>UI：User Interface(用户界面)</p>
+<p>UGC：User Generated Content(用户生产内容)</p>
+<p>CLI：Command-line Interface(命令行界面)</p>
+<p>GUI：Graphical User Interface(图形用户界面)</p>
+<p>NUI：Natural User Interface(自然用户界面)</p>
+<hr>
+<p>GM：General Manager (总经理)</p>
+<p>VP：Vice President (副总裁)</p>
+<p>AVP：Assistant Vice President (副总裁助理)</p>
+<p>HRD：Human Resource Director (人力资源总监)</p>
+<p>OD：Operations Director (运营总监)</p>
+<p>MD：Marketing Director (市场总监)</p>
+<p>OM：Operations Manager (运作经理)</p>
+<p>PM：Production Manager(生产经理)、Product Manager(产品经理)、Project Manager(项目经理)</p>
+<p>BM：Branch Manager(部门经理)</p>
+<p>DM：District Manager(区域经理)</p>
+<hr>
+<p>URL：Uniform Resoure Locator(统一资源定位器)</p>
+<p>UED：User Experience Design(用户体验设计师)</p>
+<p>GMV：Gross Merchandise Volume(商品交易总量)</p>
+<hr>
+<p>SEO：Search Engine Optimization(搜索引擎优化)</p>
+<p>SKU：Stock Keeping Unit(库存量单位)</p>
+<p>SPU：Standard Product Unit (标准化产品单元)</p>
+<p>ROI：Return On Investment(投资回报率)</p>
+<p>C2C：Copy to China(借鉴国外成功产品模式)</p>
+<p>ERP：Enterprise Resource Planning(企业资源计划)</p>
+<p>POA：Primary Optical Area(第一视觉落点区)</p>
+<hr>
+<p><strong>MVP</strong><br>Minimum Viable Product，最小可行产品，即用最低的成本实现一个尽可能展示核心概念的产品，产品团队可以通过它收集到尽可能多的用户反馈和数据，从而评估这个产品能带来的效益。</p>
+<p><strong>进入壁垒</strong></p>
+<p>进入壁垒指的是进入某一市场的难度，这一高度取决于自身的技术、成本、对特定资源的占有情况，以及对手的发展程度。如果进入壁垒过高，比如想要做一个超越Google的搜索引擎，这件事在地球上没几个人能做到;如果进入壁垒过低，人人都可以做，那就意味着你的蓝海时段会很短，可能难以获得足够支撑长期发展的用户规模。</p>
+<p><strong>商业价值</strong></p>
+<p>商业模式指的是一款产品如何创造价值。侠义上来说，就是如何赚钱，广义上来讲，除了经济上的价值，还有社会价值和其他形式的价值。例如不少开源组织，尽管他们自身并不盈利，仅依靠一些基金会维持自身的运作，但其创造了大量的社会价值。虽然这其中并没有钱的味道，但这依然叫做“商业”价值。</p>
+<p><strong>PDD</strong></p>
+<p>PDD(Product Design Document)产品设计文档，是伴随产品整个生命周期的连接概念与执行的重要工具，它帮助产品团队与研发团队和高层领导达成共识，进而明确研发计划并指导研发过程。</p>
+<p>PDD主要包含三类图纸：<br>网站结构图(Website Architecture Map)、网站蓝图(Wireframe或者Mockups)和网页描述表(Page Description Diagram)。</p>
+<p>网站结构图通常会以思维导图的形式展现，用于描述整个网站的结构，确定网站的模块划分及网页个数。有的地方也称之为“站点地图”。在绘制网站结构图时，要注意MECE原则(Mutually Exclusive Collectively Exhaustive)，中文含义是“互相独立，完全穷尽”，即要求分类清晰，降低理解门槛，不重复，不缺漏。可以使用MindManager、Omnigraffle、XMind等来做。</p>
+<p>网站蓝图，还有一个名字叫“交互设计图”。描述了一个网页中所需要包含的基础元素机器在这个页面中的布局，它会由图形界面设计师最终完善成美观的网页设计图。通常会使用Axure、Visio、Fireworks、Photoshop、Balsamiq Mockups等工具完成。小公司中通常由产品经理单独负责，大公司里会有专门的交互设计师来合作完成。</p>
+<p>网页描述表是这三类图中最符合“文档”的概念的。因为它完全可以就是一份word文档。它包含了一个网页中所需展示的元素及其背后的逻辑，并不包含这些元素在页面中的布局(这在网站蓝图中有)。例如：域名、标题、Logo、模块名称及其描述、版权信息等。</p>
+<p><strong>注意：</strong><br>PDD的目标用户，首先是产品团队，需要团队内部达成共识;然后是研发团队，用于确认可行性和研发成本;接下来会和研发部门给出的评估意见一起交给高层领导，确认项目周期，拍板资源;项目启动后，PDD回到研发团队指导具体的研发工作，同时进入测试团队，帮助制定测试计划。有时候，外部合作伙伴也会需要查看PDD，以便完成一些合作项目。这其中最重要的目标用户就是研发团队，因为他们是实现所有设计的核心力量，至于领导那边，还是用ppt和keynote去搞定最有效。</p>
+<p><strong>提一下墨菲定律</strong></p>
+<p>墨菲定律原本的意思是说：<strong>事情如果有变坏的可能，不管这种可能性有多小，它总会发生。</strong>简单的说就是“越怕出事，越会出事”。</p>
+<p>放到互联网行业通常就是这样：</p>
+<p>凡是输入框，都会遭遇灌水、SPAM、脚本注入。</p>
+<p>凡是积分，都会被刷。</p>
+<p>凡是推到网站首页的内容，都会出现色情、政治。</p>
+<p>凡是用户间沟通的渠道，都会被广告机器人利用。</p>
+<p>而对于项目管理而言，又可能是这样：</p>
+<p>一项工作如果只有一个人负责，这个人肯定会休假或者离职。</p>
+<p>认为没有技术难点的地方，都会成为技术难点或性能瓶颈。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;MRD：Market Requirements Document (市场需求文档)&lt;/p&gt;
+&lt;p&gt;PRD：Product Requirements Document (产品需求文档)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意：MRD和PRD互为因果，有了输入MRD才能有输出PRD&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;KPI：Key Performance Indicator(关键绩效指标)&lt;/p&gt;
+&lt;p&gt;PV：page view(页面浏览量)&lt;/p&gt;
+&lt;p&gt;UV：unique visitor(独立IP)&lt;br&gt;
+    
+    </summary>
+    
+      <category term="产品经理" scheme="http://yoursite.com/categories/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
+    
+    
+      <category term="产品经理" scheme="http://yoursite.com/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git知识总结</title>
+    <link href="http://yoursite.com/2016/08/10/git%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2016/08/10/git知识总结/</id>
+    <published>2016-08-09T16:00:00.000Z</published>
+    <updated>2017-06-16T01:05:53.240Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="遇到的所有问题："><a href="#遇到的所有问题：" class="headerlink" title="遇到的所有问题："></a><strong>遇到的所有问题：</strong></h3><p><strong>1：</strong><br>warning: LF will be replaced by CRLF in XXXXXXXXXXXXXX.<br>解决 git config core.autocrlf false</p>
+<p><strong>2：</strong><br>github push 提交代码时停止在writing objects怎么办？<br>git config –global http.postBuffer 524288000</p>
+<p><strong>3：</strong><br>新建仓库初始化时，不要点击初始化按钮，<br>否则github就自动建立一个git仓库，并且生成一个版本库<br><a id="more"></a><br>所以这样的话，那你用git push origin master就会说被拒绝<br>这种情况<br><strong>要先git pull origin master</strong><br><strong>再git push origin master</strong></p>
+<h3 id="一开始怎么绑定github账号"><a href="#一开始怎么绑定github账号" class="headerlink" title="一开始怎么绑定github账号"></a>一开始怎么绑定github账号</h3><p><strong>设置全局用户名和email，作为每次提交的记录</strong><br>git config –global user.name “name”<br>git config –global user.email “mail.com”  </p>
+<h3 id="添加一个仓库"><a href="#添加一个仓库" class="headerlink" title="添加一个仓库"></a><strong>添加一个仓库</strong></h3><p>git remote add origin git@….git<br>git push -u origin master  </p>
+<h3 id="当提示权限不够时，添加ssh公钥"><a href="#当提示权限不够时，添加ssh公钥" class="headerlink" title="当提示权限不够时，添加ssh公钥"></a>当提示权限不够时，添加ssh公钥</h3><h3 id="在用户的-ssh目录下找id-rsa-pub等文件，没有的话去生成"><a href="#在用户的-ssh目录下找id-rsa-pub等文件，没有的话去生成" class="headerlink" title="在用户的.ssh目录下找id_rsa.pub等文件，没有的话去生成"></a>在用户的.ssh目录下找id_rsa.pub等文件，没有的话去生成</h3><p>ssh-keygen -t rsa -C “youremail@example.com”  </p>
+<h3 id="设置pull的默认地址"><a href="#设置pull的默认地址" class="headerlink" title="设置pull的默认地址"></a>设置pull的默认地址</h3><p>git branch –set-upstream-to=origin/master  </p>
+<h3 id="设置push的默认地址"><a href="#设置push的默认地址" class="headerlink" title="设置push的默认地址"></a>设置push的默认地址</h3><p>git remote add origin git@….git  </p>
+<h3 id="配置别名"><a href="#配置别名" class="headerlink" title="配置别名"></a>配置别名</h3><p>git config –global alias.xx ‘’  </p>
+<h3 id="临时保存工作区"><a href="#临时保存工作区" class="headerlink" title="临时保存工作区"></a>临时保存工作区</h3><p>git stash<br>git stash pop  </p>
+<h3 id="回滚"><a href="#回滚" class="headerlink" title="回滚"></a>回滚</h3><p>git reset —hard 版本号  </p>
+<h3 id="强行回滚远程服务器"><a href="#强行回滚远程服务器" class="headerlink" title="强行回滚远程服务器"></a>强行回滚远程服务器</h3><p>git push -f  </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;遇到的所有问题：&quot;&gt;&lt;a href=&quot;#遇到的所有问题：&quot; class=&quot;headerlink&quot; title=&quot;遇到的所有问题：&quot;&gt;&lt;/a&gt;&lt;strong&gt;遇到的所有问题：&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;1：&lt;/strong&gt;&lt;br&gt;warning: LF will be replaced by CRLF in XXXXXXXXXXXXXX.&lt;br&gt;解决 git config core.autocrlf false&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2：&lt;/strong&gt;&lt;br&gt;github push 提交代码时停止在writing objects怎么办？&lt;br&gt;git config –global http.postBuffer 524288000&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3：&lt;/strong&gt;&lt;br&gt;新建仓库初始化时，不要点击初始化按钮，&lt;br&gt;否则github就自动建立一个git仓库，并且生成一个版本库&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工具能力" scheme="http://yoursite.com/categories/%E5%B7%A5%E5%85%B7%E8%83%BD%E5%8A%9B/"/>
+    
+    
+      <category term="GIT" scheme="http://yoursite.com/tags/GIT/"/>
     
   </entry>
   
