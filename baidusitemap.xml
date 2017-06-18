@@ -4,48 +4,8 @@
 
     
   <url>
-    <loc>http://yoursite.com/2017/06/18/JS%E4%B8%AD%E7%BA%A6%E5%AE%9A%E4%BF%97%E6%88%90%E7%9A%84%E8%8B%B1%E8%AF%AD%E5%8D%95%E8%AF%8D%E7%9A%84%E6%84%8F%E8%AF%86/</loc>
-    <lastmod>2017-06-18T09:18:16.179Z</lastmod>
-    <data>
-        <display>
-        <title>JS中约定俗成的英语单词的意识【一直更新】</title>
-        <pubTime>2017-06-18T07:50:43.000Z</pubTime>
-        
-        <tag>JS英语单词</tag>
-         
-         
-           
-             
-              <breadCrumb title="JS" url="http://yoursite.com/categories/JS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/05/10/JS%E4%B9%8B%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</loc>
-    <lastmod>2017-06-18T09:14:14.194Z</lastmod>
-    <data>
-        <display>
-        <title>JS之冒泡排序</title>
-        <pubTime>2017-05-10T08:40:03.000Z</pubTime>
-        
-        <tag>算法</tag>
-         
-         
-           
-             
-              <breadCrumb title="JS世界里的算法" url="http://yoursite.com/categories/JS%E4%B8%96%E7%95%8C%E9%87%8C%E7%9A%84%E7%AE%97%E6%B3%95/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yoursite.com/2017/05/11/%E5%89%8D%E7%AB%AF%E8%BF%9B%E9%98%B6%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95/</loc>
-    <lastmod>2017-06-17T09:21:50.189Z</lastmod>
+    <lastmod>2017-06-18T09:22:25.706Z</lastmod>
     <data>
         <display>
         <title>前端进阶文章目录</title>
@@ -67,6 +27,46 @@
            
              
               <breadCrumb title="前端" url="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/05/10/JS%E4%B9%8B%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</loc>
+    <lastmod>2017-06-18T09:21:43.795Z</lastmod>
+    <data>
+        <display>
+        <title>JS之冒泡排序</title>
+        <pubTime>2017-05-10T08:40:03.000Z</pubTime>
+        
+        <tag>算法</tag>
+         
+         
+           
+             
+              <breadCrumb title="JS世界里的算法" url="http://yoursite.com/categories/JS%E4%B8%96%E7%95%8C%E9%87%8C%E7%9A%84%E7%AE%97%E6%B3%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/06/18/JS%E4%B8%AD%E7%BA%A6%E5%AE%9A%E4%BF%97%E6%88%90%E7%9A%84%E8%8B%B1%E8%AF%AD%E5%8D%95%E8%AF%8D%E7%9A%84%E6%84%8F%E8%AF%86/</loc>
+    <lastmod>2017-06-18T09:18:16.179Z</lastmod>
+    <data>
+        <display>
+        <title>JS中约定俗成的英语单词的意识【一直更新】</title>
+        <pubTime>2017-06-18T07:50:43.000Z</pubTime>
+        
+        <tag>JS英语单词</tag>
+         
+         
+           
+             
+              <breadCrumb title="JS" url="http://yoursite.com/categories/JS/"/>
           
         </display>
     </data>
