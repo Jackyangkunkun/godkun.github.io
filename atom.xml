@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-06-17T06:46:40.777Z</updated>
+  <updated>2017-06-18T09:18:16.179Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS中约定俗成的英语单词的意识【一直更新】</title>
+    <link href="http://yoursite.com/2017/06/18/JS%E4%B8%AD%E7%BA%A6%E5%AE%9A%E4%BF%97%E6%88%90%E7%9A%84%E8%8B%B1%E8%AF%AD%E5%8D%95%E8%AF%8D%E7%9A%84%E6%84%8F%E8%AF%86/"/>
+    <id>http://yoursite.com/2017/06/18/JS中约定俗成的英语单词的意识/</id>
+    <published>2017-06-18T07:50:43.000Z</published>
+    <updated>2017-06-18T09:18:16.179Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="JS" scheme="http://yoursite.com/categories/JS/"/>
+    
+    
+      <category term="JS英语单词" scheme="http://yoursite.com/tags/JS%E8%8B%B1%E8%AF%AD%E5%8D%95%E8%AF%8D/"/>
+    
+  </entry>
   
   <entry>
     <title>产品经理之过滤法则</title>
@@ -59,6 +77,31 @@
     
     
       <category term="产品经理" scheme="http://yoursite.com/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用Axure写产品需求文档</title>
+    <link href="http://yoursite.com/2017/05/11/%E7%94%A8Axure%E5%86%99%E4%BA%A7%E5%93%81%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3/"/>
+    <id>http://yoursite.com/2017/05/11/用Axure写产品需求文档/</id>
+    <published>2017-05-11T08:09:03.000Z</published>
+    <updated>2017-06-17T08:11:16.356Z</updated>
+    
+    <content type="html"><![CDATA[<p>链接如下：</p>
+<p><a href="http://www.jianshu.com/p/2006f660d2b0" target="_blank" rel="external">http://www.jianshu.com/p/2006f660d2b0</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;链接如下：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/2006f660d2b0&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/2006f660d2b0&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Axure" scheme="http://yoursite.com/categories/Axure/"/>
+    
+    
+      <category term="Axure" scheme="http://yoursite.com/tags/Axure/"/>
     
   </entry>
   
@@ -111,27 +154,39 @@
   </entry>
   
   <entry>
-    <title>用Axure写产品需求文档</title>
-    <link href="http://yoursite.com/2017/05/11/%E7%94%A8Axure%E5%86%99%E4%BA%A7%E5%93%81%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3/"/>
-    <id>http://yoursite.com/2017/05/11/用Axure写产品需求文档/</id>
-    <published>2017-05-11T08:09:03.000Z</published>
-    <updated>2017-06-17T08:11:16.356Z</updated>
+    <title>JS之冒泡排序</title>
+    <link href="http://yoursite.com/2017/05/10/JS%E4%B9%8B%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/"/>
+    <id>http://yoursite.com/2017/05/10/JS之冒泡排序/</id>
+    <published>2017-05-10T08:40:03.000Z</published>
+    <updated>2017-06-18T09:14:14.194Z</updated>
     
-    <content type="html"><![CDATA[<p>链接如下：</p>
-<p><a href="http://www.jianshu.com/p/2006f660d2b0" target="_blank" rel="external">http://www.jianshu.com/p/2006f660d2b0</a></p>
+    <content type="html"><![CDATA[<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><blockquote>
+<p>通俗的说就是把一堆数放进有序数组里，然后从第一个数开始，依次比较自己和后一个数的值，如果需要输出升序排列，那就要把大的数放在后面，于是很自然的想到如果自己比后一个数大，那就要互相交换值，如果不大，则不需要交换。依次往后循环即可完成升序排序。降序排列同理。</p>
+</blockquote>
+<h2 id="算法步骤"><a href="#算法步骤" class="headerlink" title="算法步骤"></a>算法步骤</h2><p>1：比较相邻的元素。如果第一个比第二个大，就互相交换。</p>
+<p>2：对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。做完后，最后的元素会将是最大的数。</p>
+<p>3：针对所有的元素重复以上的步骤，除了最后一个。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> bubbleSort(arr) &#123;</div><div class="line">    var len = arr.length;</div><div class="line">    <span class="keyword">for</span> (var i = 0; i &lt; len - 1; i++) &#123;</div><div class="line">        <span class="keyword">for</span> (var j = 0; j &lt; len - 1 - i; j++) &#123;</div><div class="line">            <span class="keyword">if</span> (arr[j] &gt; arr[j+1]) &#123;        // 相邻元素两两对比</div><div class="line">                var temp = arr[j+1];        // 元素交换</div><div class="line">                arr[j+1] = arr[j];</div><div class="line">                arr[j] = temp;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    console.log(arr);</div><div class="line">&#125;</div><div class="line"></div><div class="line">bubbleSort([5,4,3,2,1]);</div></pre></td></tr></table></figure>
+<blockquote>
+<p>将上面程序保存名为 bubbleSort 的 js 文件，然后进入 bubbleSort 所在的目录下，用 node bubbleSort.js 命令运行程序，结果如下图。</p>
+</blockquote>
+<p><img src="/images/bubbleSort.png" alt=""></p>
+<h2 id="算法性能分析"><a href="#算法性能分析" class="headerlink" title="算法性能分析"></a>算法性能分析</h2><blockquote>
+<p>由于嵌套两层 for 循环，导致时间复杂度为 <strong>O(n2)</strong>，n2 是 n 的平方的意识。当 n 很大的时候，性能非常差。所以仅仅只适合 n 很小的情况。</p>
+</blockquote>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;链接如下：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/2006f660d2b0&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/2006f660d2b0&lt;/a&gt;&lt;/p&gt;
+      &lt;h2 id=&quot;冒泡排序&quot;&gt;&lt;a href=&quot;#冒泡排序&quot; class=&quot;headerlink&quot; title=&quot;冒泡排序&quot;&gt;&lt;/a&gt;冒泡排序&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;通俗的说就是把一堆数放进有序数组里，然后从第一个数开始，依次比较自己和后一个数的值，如果需要输出升
     
     </summary>
     
-      <category term="Axure" scheme="http://yoursite.com/categories/Axure/"/>
+      <category term="JS世界里的算法" scheme="http://yoursite.com/categories/JS%E4%B8%96%E7%95%8C%E9%87%8C%E7%9A%84%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="Axure" scheme="http://yoursite.com/tags/Axure/"/>
+      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -507,41 +562,6 @@
   </entry>
   
   <entry>
-    <title>产品经理的职业修养</title>
-    <link href="http://yoursite.com/2016/09/15/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E7%9A%84%E8%81%8C%E4%B8%9A%E4%BF%AE%E5%85%BB/"/>
-    <id>http://yoursite.com/2016/09/15/产品经理的职业修养/</id>
-    <published>2016-09-14T16:00:00.000Z</published>
-    <updated>2017-06-17T07:30:08.479Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>序：学道客，修养莫迟迟，光景斯须如梦里。</strong></p>
-<h2 id="8句话"><a href="#8句话" class="headerlink" title="8句话"></a>8句话</h2><p>诚实。</p>
-<p>有所长有所短。</p>
-<p>对产品有信心并且做好了长期吃苦的思想准备。</p>
-<p>能够在行进中不断开火，而不是纸上谈兵。<br><a id="more"></a></p>
-<p>愿意倾听用户的意见和其他人善意的建议。</p>
-<p>不推卸责任。</p>
-<p>不会认为理论上可行就等于彻底搞定。</p>
-<p>不会去浪费时间重新发明轮子。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;序：学道客，修养莫迟迟，光景斯须如梦里。&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;8句话&quot;&gt;&lt;a href=&quot;#8句话&quot; class=&quot;headerlink&quot; title=&quot;8句话&quot;&gt;&lt;/a&gt;8句话&lt;/h2&gt;&lt;p&gt;诚实。&lt;/p&gt;
-&lt;p&gt;有所长有所短。&lt;/p&gt;
-&lt;p&gt;对产品有信心并且做好了长期吃苦的思想准备。&lt;/p&gt;
-&lt;p&gt;能够在行进中不断开火，而不是纸上谈兵。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="产品经理" scheme="http://yoursite.com/categories/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
-    
-    
-      <category term="产品经理" scheme="http://yoursite.com/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
     <title>让创业团队拧成一股绳的不败法则</title>
     <link href="http://yoursite.com/2016/09/15/%E8%AE%A9%E5%88%9B%E4%B8%9A%E5%9B%A2%E9%98%9F%E6%8B%A7%E6%88%90%E4%B8%80%E8%82%A1%E7%BB%B3%E7%9A%84%E4%B8%8D%E8%B4%A5%E6%B3%95%E5%88%99/"/>
     <id>http://yoursite.com/2016/09/15/让创业团队拧成一股绳的不败法则/</id>
@@ -587,6 +607,41 @@
     </summary>
     
       <category term="释放团队力量" scheme="http://yoursite.com/categories/%E9%87%8A%E6%94%BE%E5%9B%A2%E9%98%9F%E5%8A%9B%E9%87%8F/"/>
+    
+    
+      <category term="产品经理" scheme="http://yoursite.com/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>产品经理的职业修养</title>
+    <link href="http://yoursite.com/2016/09/15/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E7%9A%84%E8%81%8C%E4%B8%9A%E4%BF%AE%E5%85%BB/"/>
+    <id>http://yoursite.com/2016/09/15/产品经理的职业修养/</id>
+    <published>2016-09-14T16:00:00.000Z</published>
+    <updated>2017-06-17T07:30:08.479Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>序：学道客，修养莫迟迟，光景斯须如梦里。</strong></p>
+<h2 id="8句话"><a href="#8句话" class="headerlink" title="8句话"></a>8句话</h2><p>诚实。</p>
+<p>有所长有所短。</p>
+<p>对产品有信心并且做好了长期吃苦的思想准备。</p>
+<p>能够在行进中不断开火，而不是纸上谈兵。<br><a id="more"></a></p>
+<p>愿意倾听用户的意见和其他人善意的建议。</p>
+<p>不推卸责任。</p>
+<p>不会认为理论上可行就等于彻底搞定。</p>
+<p>不会去浪费时间重新发明轮子。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;序：学道客，修养莫迟迟，光景斯须如梦里。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;8句话&quot;&gt;&lt;a href=&quot;#8句话&quot; class=&quot;headerlink&quot; title=&quot;8句话&quot;&gt;&lt;/a&gt;8句话&lt;/h2&gt;&lt;p&gt;诚实。&lt;/p&gt;
+&lt;p&gt;有所长有所短。&lt;/p&gt;
+&lt;p&gt;对产品有信心并且做好了长期吃苦的思想准备。&lt;/p&gt;
+&lt;p&gt;能够在行进中不断开火，而不是纸上谈兵。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="产品经理" scheme="http://yoursite.com/categories/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
     
     
       <category term="产品经理" scheme="http://yoursite.com/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
