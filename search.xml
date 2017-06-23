@@ -3,9 +3,153 @@
   
     
     <entry>
-      <title><![CDATA[JS中约定俗成的英语单词的意识【一直更新】]]></title>
+      <title><![CDATA[JS算法之二分查找算法]]></title>
+      <url>/2017/06/23/JS%E7%AE%97%E6%B3%95%E4%B9%8B%E4%BA%8C%E5%88%86%E6%B3%95%E6%9F%A5%E6%89%BE/</url>
+      <content type="html"><![CDATA[<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>字面意识上就是</p>
+<h2 id="使用前提"><a href="#使用前提" class="headerlink" title="使用前提"></a>使用前提</h2><p>数据要是有序的，对无序的数据无效。</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>1：将数组的第一个元素的位置设置为下边界【0】<br>2：将数组的最后一个元素的位置设置为上边界【数组的长度减1】<br>3：若下边界等于或小于上边界，则作如下操作。</p>
+<blockquote>
+<p>   a. 将中点设置为【上边界加下边界】除以2.<br>    b. 如果中点的元素小于查询的值，则将下边界设置为中点元素所在下标加1。<br>    c. 如果中点的元素大于查询的值，则将上边界设置为中点元素所在下标减1。<br>    d. 否则中点元素即为要查找的数据，可以进行返回。</p>
+</blockquote>
+<h2 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h2><a id="more"></a>    
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> binSearch(arr, data) &#123;</div><div class="line">	</div><div class="line">	// 上界</div><div class="line">	var upperBound = arr.length-1;</div><div class="line">	</div><div class="line">	// 下界</div><div class="line">	var lowerBound = 0;</div><div class="line">	</div><div class="line">	<span class="keyword">while</span> (lowerBound &lt; upperBound) &#123;</div><div class="line">	</div><div class="line">		// 取中值</div><div class="line">		var mid = Math.floor((lowerBound+upperBound)/2);</div><div class="line">		</div><div class="line">		// 改变上界或者下界的值</div><div class="line">		<span class="keyword">if</span>(arr[mid] &lt; data)&#123;</div><div class="line">			lowerBound = mid + 1;</div><div class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span>(arr[mid] &gt; data)&#123;</div><div class="line">			upperBound = mid - 1;</div><div class="line">		&#125;<span class="keyword">else</span>&#123;</div><div class="line">			<span class="built_in">return</span> mid; </div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">		<span class="built_in">return</span> -1;</div><div class="line">&#125;</div><div class="line"></div><div class="line">var nums = [];</div><div class="line"></div><div class="line"><span class="keyword">for</span> (<span class="built_in">let</span> i = 0; i &lt; 100; i++) &#123;</div><div class="line">	</div><div class="line">	// 0到100的整数</div><div class="line">	nums[i] = Math.floor(Math.random()*100);</div><div class="line">&#125;</div><div class="line"></div><div class="line">//  对数组排序</div><div class="line">var sortNums = nums.sort();</div><div class="line"></div><div class="line">// 不换行打印排序后的数组</div><div class="line">console.log(sortNums+<span class="string">" "</span>);</div><div class="line"></div><div class="line">// 设置需要找的数据</div><div class="line">var val = 38;</div><div class="line"></div><div class="line">// 调用二分查找函数</div><div class="line">var retval = binSearch(sortNums,val);</div><div class="line"></div><div class="line">// 判断是否存在，存在的话将位置打印出来</div><div class="line"><span class="keyword">if</span> (retval &gt; 0) &#123;</div><div class="line">	console.log(<span class="string">"已经找到"</span>+val+<span class="string">"所在位置为："</span> + retval);</div><div class="line">&#125; <span class="keyword">else</span> &#123;</div><div class="line">	console.log(val + <span class="string">"没有出现在这个数组中"</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>输出如下<br><img src="/images/binSearch.png" alt=""></p>
+<h2 id="心得体会"><a href="#心得体会" class="headerlink" title="心得体会"></a>心得体会</h2><blockquote>
+<p>对于二分查找法需要有序数据的这个前提条件感到不太满意，无形中是效率变低。不过相对于顺序查找，在处理大数据集时，速度要明显快。因为决定算法性能的每一步循环嵌套中，二分查找减少了一半的查找量（数组中的元素）。</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> JS世界里的算法 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[react第一节]]></title>
+      <url>/2017/06/22/react%E7%AC%AC%E4%B8%80%E8%8A%82/</url>
+      <content type="html"><![CDATA[<h2 id="React-的核心思想"><a href="#React-的核心思想" class="headerlink" title="React 的核心思想"></a>React 的核心思想</h2><p><strong>通过组件来开发应用。</strong></p>
+<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><p>所谓组件，指的是能完成某个特定功能的独立的、重用的代码。</p>
+<p><strong>基于组件的应用开发是广泛使用的软件开发模式。</strong></p>
+<h2 id="JSX"><a href="#JSX" class="headerlink" title="JSX"></a>JSX</h2><p>全称：JavaScript eXtension<br>目的：让我们可以在JS中编写像HTML一样的代码。<br>一种JavaScript的数据结构，不是真正的HTML，也和DOM没有关系，其实就是React.createElement写法的语法糖，是快速高效书写这个函数的方法，它返回的是ReactElement。</p>
+<blockquote>
+<p>JSX不能直接在浏览器中使用，需要转义成标准的JS语法，而JS编译器Babel就是目前最好的JSX的转义工具。</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="Babel"><a href="#Babel" class="headerlink" title="Babel"></a>Babel</h2><p>是什么：一个JavaScript编译器。<br>作用：一个是让代码支持ES6的语法，一个是支持React的一些特性（例如JSX语法）。</p>
+<h2 id="Virtual-DOM-【虚拟DOM】"><a href="#Virtual-DOM-【虚拟DOM】" class="headerlink" title="Virtual DOM 【虚拟DOM】"></a>Virtual DOM 【虚拟DOM】</h2><p>目的：尽量减少DOM操作<br><strong>每个React组件都是用虚拟DOM渲染的。</strong></p>
+<blockquote>
+<p>DOM树是对HTML的抽象，那Virtual DOM就是对DOM树的抽象。组件的DOM结构映射到虚拟DOM上，当需要重新渲染组件时，React在虚拟DOM上实现了一个 Diff 算法，通过这个算法寻找需要变更的节点，再把里面的修改更新到实际需要修改的DOM节点上，这样就避免了整个渲染DOM带来的巨大成本。</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> react </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> react </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[算法的本质]]></title>
+      <url>/2017/06/22/%E7%AE%97%E6%B3%95%E7%9A%84%E6%9C%AC%E8%B4%A8/</url>
+      <content type="html"><![CDATA[<h2 id="本质"><a href="#本质" class="headerlink" title="本质"></a>本质</h2><p><strong>算法本质上可以看做是在一个解空间当中的搜索问题，所以要分析一个算法的好坏，首先要弄清它的解空间的结构，然后分析它是怎么来探索这个解空间的。</strong></p>
+<h2 id="如何弄清解空间"><a href="#如何弄清解空间" class="headerlink" title="如何弄清解空间"></a>如何弄清解空间</h2><blockquote>
+<p>举个例子，例如排序算法，其解空间可以看做是所有可能的下标排列组合，其中有且仅有一个排列是正确的排序排列，这里假设元素各不相同，那么一个算法在探索这个解空间方面的行为就决定了它的效率高低，最简单的，如果一个算法每次都只能检查解空间中的一个点，那么这个算法的复杂度就是解空间的大小。</p>
+</blockquote>
+<p>对排序算法而言也就是 n! 。从这个角度来看，我们很容易地发现，<strong>所有基于比较的排序算法，其复杂度为什么是以O(nlogn)为下界的，因为一次比较操作最多有两个结果，a&gt;b或b&gt;a，既然只有两种结果，那么最多只能将空间进行二分，如果每次都能完美地二分，那么找到那个唯一点最终需要的步骤就是log(n!) = O(nlogn)。</strong><br>这样就不难理解为什么基于比较的排序算法的复杂度最好不过如此了。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 算法 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[算法中的常见的单词【一直更新】]]></title>
+      <url>/2017/06/22/%E7%AE%97%E6%B3%95%E4%B8%AD%E7%9A%84%E5%B8%B8%E8%A7%81%E7%9A%84%E5%8D%95%E8%AF%8D/</url>
+      <content type="html"><![CDATA[<p>upperBound : 上边界<br>lowerBound :  下边界<br>tonken : 在词法分析中是标记的意识</p>
+]]></content>
+      
+        <categories>
+            
+            <category> JS </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> JS英语单词 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[《暗时间》读书笔记]]></title>
+      <url>/2017/06/21/%E6%9A%97%E6%97%B6%E9%97%B4/</url>
+      <content type="html"><![CDATA[<p><strong>波普尔曾经说过：人生不过是解决问题。</strong></p>
+<p>挑几个重要的收获说吧：</p>
+<p><strong>你比别人往后多看一年，你就比别人领先一年的时间来准备。</strong></p>
+<p>思考问题，去追寻答案的时候，一定要学会联想。</p>
+<p>一定不要把简单的事情搞复杂。<br><a id="more"></a></p>
+<p>遇到问题一定要自己动手，不要直接问答案。</p>
+<p>坚持写博客，记录笔记，与自己对话。</p>
+<p>找到你的不可替代性和核心竞争力。</p>
+<p>兴趣遍地都是，专注和持之以恒才是真正稀缺的。</p>
+<p>过早退出是一切失败的根源。</p>
+<p>生活中的选择远比我们想象的要多，细微的选择差异造就了不同的人生。</p>
+<p>一生的知识积累，自学的起码占90%</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 能力提升 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 读书笔记 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[学习react遇到的英文单词【一直更新】]]></title>
       <url>/2017/06/18/JS%E4%B8%AD%E7%BA%A6%E5%AE%9A%E4%BF%97%E6%88%90%E7%9A%84%E8%8B%B1%E8%AF%AD%E5%8D%95%E8%AF%8D%E7%9A%84%E6%84%8F%E8%AF%86/</url>
-      <content type="html"></content>
+      <content type="html"><![CDATA[<p>eject：弹射<br>delegation：委托<br>bable：嘈杂声<br>loader：处理机，装货机<br>dispatcher：调度者<br>emit：发出，广播<br>react：反应<br>Redux: reducer + flux</p>
+]]></content>
       
         <categories>
             
@@ -54,6 +198,33 @@
         <tags>
             
             <tag> 产品经理 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[JS之快速排序]]></title>
+      <url>/2017/05/19/%E7%AE%97%E6%B3%95%E7%95%8C%E7%9A%84%E9%BB%91%E9%AD%94%E6%B3%95%E4%B9%8B%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/</url>
+      <content type="html"><![CDATA[<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>一种分而治之的算法，通过递归的方式依次分解为包含较小元素和较大元素的不同子序列。然后不断重复这个步骤直到所有数据都是有序的。</p>
+<h2 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h2><p>平均时间复杂度为O(nlogn)</p>
+<h2 id="算法步骤"><a href="#算法步骤" class="headerlink" title="算法步骤"></a>算法步骤</h2><p>1：选择一个基准元素，将列表分隔成两个子序列；<br>2：对列表进行重新排序，将所有小于基准值的元素放在基准值的前面，所有大于基准值的元素放在基准值的后面；<br>3：分别对较小元素的子序列和较大元素的子序列重复步骤1和2。</p>
+<h2 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h2><a id="more"></a>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> qSort(list) &#123;</div><div class="line">	<span class="keyword">if</span> (list.length==0) &#123;</div><div class="line">		<span class="built_in">return</span> [];</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	//定义一个基准值</div><div class="line">	var pivot = list[0];</div><div class="line">	</div><div class="line">	//用于放小于基准值的元素的数组</div><div class="line">	var lesser = [];</div><div class="line">	</div><div class="line">	//用于放大于基准值的元素的数组</div><div class="line">	var greater = [];</div><div class="line">	</div><div class="line">	<span class="keyword">for</span> (<span class="built_in">let</span> i = 1 ; i &lt; list.length; i++) &#123;	</div><div class="line">		<span class="keyword">if</span> (list[i]&lt;pivot) &#123;</div><div class="line">			lesser.push(list[i]);</div><div class="line">		&#125; <span class="keyword">else</span> &#123;</div><div class="line">			greater.push(list[i]);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	//使用了递归,将lesser数组、基准值pivot和greater数组依次连接起来构成新的数组</div><div class="line">	<span class="built_in">return</span> qSort(lesser).concat(pivot,qSort(greater));</div><div class="line">&#125;</div><div class="line"></div><div class="line">var a = [];</div><div class="line"><span class="keyword">for</span> (<span class="built_in">let</span> i = 0; i &lt; 10; i++) &#123;</div><div class="line">	a[i] = Math.floor((Math.random()*10)+1);</div><div class="line">&#125;</div><div class="line"></div><div class="line">console.log(a);</div><div class="line">console.log(qSort(a));</div></pre></td></tr></table></figure>
+<p>输出如下<br><img src="/images/qSort.png" alt=""></p>
+<h2 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h2><p>根据我的测试，快速排序算法非常适用于大型数据集合，可是在处理小数据集合时性能反而会下降。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> JS世界里的算法 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 算法 </tag>
             
         </tags>
         
@@ -113,9 +284,9 @@
             
             <tag> JS </tag>
             
-            <tag> ES6 </tag>
-            
             <tag> react </tag>
+            
+            <tag> ES6 </tag>
             
             <tag> this </tag>
             
@@ -476,6 +647,35 @@
     </entry>
     
     <entry>
+      <title><![CDATA[产品经理的职业修养]]></title>
+      <url>/2016/09/15/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E7%9A%84%E8%81%8C%E4%B8%9A%E4%BF%AE%E5%85%BB/</url>
+      <content type="html"><![CDATA[<p><strong>序：学道客，修养莫迟迟，光景斯须如梦里。</strong></p>
+<h2 id="8句话"><a href="#8句话" class="headerlink" title="8句话"></a>8句话</h2><p>诚实。</p>
+<p>有所长有所短。</p>
+<p>对产品有信心并且做好了长期吃苦的思想准备。</p>
+<p>能够在行进中不断开火，而不是纸上谈兵。<br><a id="more"></a></p>
+<p>愿意倾听用户的意见和其他人善意的建议。</p>
+<p>不推卸责任。</p>
+<p>不会认为理论上可行就等于彻底搞定。</p>
+<p>不会去浪费时间重新发明轮子。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 产品经理 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 产品经理 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[让创业团队拧成一股绳的不败法则]]></title>
       <url>/2016/09/15/%E8%AE%A9%E5%88%9B%E4%B8%9A%E5%9B%A2%E9%98%9F%E6%8B%A7%E6%88%90%E4%B8%80%E8%82%A1%E7%BB%B3%E7%9A%84%E4%B8%8D%E8%B4%A5%E6%B3%95%E5%88%99/</url>
       <content type="html"><![CDATA[<p><strong>序：千人同心,则得千人之力;万人异心,则无一人之用。</strong></p>
@@ -510,35 +710,6 @@
         <categories>
             
             <category> 释放团队力量 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 产品经理 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[产品经理的职业修养]]></title>
-      <url>/2016/09/15/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E7%9A%84%E8%81%8C%E4%B8%9A%E4%BF%AE%E5%85%BB/</url>
-      <content type="html"><![CDATA[<p><strong>序：学道客，修养莫迟迟，光景斯须如梦里。</strong></p>
-<h2 id="8句话"><a href="#8句话" class="headerlink" title="8句话"></a>8句话</h2><p>诚实。</p>
-<p>有所长有所短。</p>
-<p>对产品有信心并且做好了长期吃苦的思想准备。</p>
-<p>能够在行进中不断开火，而不是纸上谈兵。<br><a id="more"></a></p>
-<p>愿意倾听用户的意见和其他人善意的建议。</p>
-<p>不推卸责任。</p>
-<p>不会认为理论上可行就等于彻底搞定。</p>
-<p>不会去浪费时间重新发明轮子。</p>
-]]></content>
-      
-        <categories>
-            
-            <category> 产品经理 </category>
             
         </categories>
         
