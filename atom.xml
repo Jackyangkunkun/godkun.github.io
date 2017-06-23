@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-06-23T08:43:40.650Z</updated>
+  <updated>2017-06-23T12:03:54.932Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,50 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JS之动态规划</title>
+    <link href="http://yoursite.com/2017/06/24/JS%E4%B9%8B%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    <id>http://yoursite.com/2017/06/24/JS之动态规划/</id>
+    <published>2017-06-24T11:44:58.000Z</published>
+    <updated>2017-06-23T12:03:54.932Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>动态规划方案通常会用一个数组来建立一张表，用于存放被分解众多子问题的解。当算法执行完毕，最终的解将会在这个表中很明显的地方找到。</p>
+<h2 id="动态规划与递归的联系"><a href="#动态规划与递归的联系" class="headerlink" title="动态规划与递归的联系"></a>动态规划与递归的联系</h2><p>联系：动态规划有时被认为是一种与递归相反的技术。<br>递归是从顶部开始将问题分解，通过解决掉所有分解出小问题的方式，来解决整个问题。<br>动态规划解决方案从底部开始解决问题，将所有小问题解决掉，然后合并成一个整体方案，从而解决掉整个大问题。</p>
+<h2 id="使用思路"><a href="#使用思路" class="headerlink" title="使用思路"></a>使用思路</h2><blockquote>
+<p>使用动态规划设计的算法应该从它能解决的最简单的子问题开始，继而通过得到的解，去解决其他更复杂的子问题，直到整个问题都被解决。所有子问题的解通常被存储在一个数组里以便于访问。</p>
+</blockquote>
+<h2 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h2><a id="more"></a>    
+<p>用斐波那契数列做例子。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> dynFib(n) &#123;</div><div class="line">	</div><div class="line">	// 定义val数组来保存中间结果</div><div class="line">	var val = []</div><div class="line">	<span class="keyword">for</span> (var i = 0; i &lt;= n; i++) &#123;</div><div class="line">		val[i] = 0;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	// 如果斐波那契数是1或者2，则返回1</div><div class="line">	<span class="keyword">if</span> (n==1 || n==2) &#123;</div><div class="line">		<span class="built_in">return</span> 1;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	// 否则，把数值1和2保存在val数组中1和2的位置</div><div class="line">	<span class="keyword">else</span>&#123;</div><div class="line">		val[1] = 1;</div><div class="line">		val[2] = 2;</div><div class="line">	</div><div class="line">	// 从3开始，将数组中的每个元素赋值为前两个元素只和，直到循环结束</div><div class="line">		<span class="keyword">for</span> (var i = 3; i &lt;= n ; i++) &#123;</div><div class="line">			val[i] = val[i-1] + val[i-2];</div><div class="line">		&#125;</div><div class="line">		</div><div class="line">		// 返回数组的最后一个元素即为最终计算的斐波那契数值</div><div class="line">		<span class="built_in">return</span> val[n-1];</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">var start = new Date().getTime();</div><div class="line"></div><div class="line">console.log(dynFib(30));</div><div class="line">var stop = new Date().getTime();</div><div class="line"></div><div class="line">var result = stop - start;</div><div class="line">console.log(<span class="string">"用时为： "</span>+result+<span class="string">"毫秒"</span>);</div></pre></td></tr></table></figure></p>
+<p>输出如下<br><img src="/images/dynamicPlan2.png" alt=""></p>
+<h2 id="心得体会"><a href="#心得体会" class="headerlink" title="心得体会"></a>心得体会</h2><p>更深刻的理解了递归的效率为什么很低，就是因为有太多值在递归调用中被重新计算。<br>下面一张图就可以说明它的工作效率为什么这么差。<br><img src="/images/dynamicPlan1.png" alt=""><br>上图是斐波那契函数生成的递归树，从图中就可以看出重复计算了很多值。</p>
+<blockquote>
+<p>如果编译器可以将已经计算的值记录下来，函数的执行效率就不会很差。动态规划就是用一个数组来存储已经计算过的值，以此来提高效率。</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;p&gt;动态规划方案通常会用一个数组来建立一张表，用于存放被分解众多子问题的解。当算法执行完毕，最终的解将会在这个表中很明显的地方找到。&lt;/p&gt;
+&lt;h2 id=&quot;动态规划与递归的联系&quot;&gt;&lt;a href=&quot;#动态规划与递归的联系&quot; class=&quot;headerlink&quot; title=&quot;动态规划与递归的联系&quot;&gt;&lt;/a&gt;动态规划与递归的联系&lt;/h2&gt;&lt;p&gt;联系：动态规划有时被认为是一种与递归相反的技术。&lt;br&gt;递归是从顶部开始将问题分解，通过解决掉所有分解出小问题的方式，来解决整个问题。&lt;br&gt;动态规划解决方案从底部开始解决问题，将所有小问题解决掉，然后合并成一个整体方案，从而解决掉整个大问题。&lt;/p&gt;
+&lt;h2 id=&quot;使用思路&quot;&gt;&lt;a href=&quot;#使用思路&quot; class=&quot;headerlink&quot; title=&quot;使用思路&quot;&gt;&lt;/a&gt;使用思路&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;使用动态规划设计的算法应该从它能解决的最简单的子问题开始，继而通过得到的解，去解决其他更复杂的子问题，直到整个问题都被解决。所有子问题的解通常被存储在一个数组里以便于访问。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;代码如下&quot;&gt;&lt;a href=&quot;#代码如下&quot; class=&quot;headerlink&quot; title=&quot;代码如下&quot;&gt;&lt;/a&gt;代码如下&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="JS世界里的算法" scheme="http://yoursite.com/categories/JS%E4%B8%96%E7%95%8C%E9%87%8C%E7%9A%84%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JS算法之二分查找算法</title>
     <link href="http://yoursite.com/2017/06/23/JS%E7%AE%97%E6%B3%95%E4%B9%8B%E4%BA%8C%E5%88%86%E6%B3%95%E6%9F%A5%E6%89%BE/"/>
     <id>http://yoursite.com/2017/06/23/JS算法之二分法查找/</id>
     <published>2017-06-23T05:44:58.000Z</published>
-    <updated>2017-06-23T08:43:40.650Z</updated>
+    <updated>2017-06-23T11:12:51.296Z</updated>
     
     <content type="html"><![CDATA[<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>字面意识上就是</p>
 <h2 id="使用前提"><a href="#使用前提" class="headerlink" title="使用前提"></a>使用前提</h2><p>数据要是有序的，对无序的数据无效。</p>
@@ -289,31 +328,6 @@
   </entry>
   
   <entry>
-    <title>用Axure写产品需求文档</title>
-    <link href="http://yoursite.com/2017/05/11/%E7%94%A8Axure%E5%86%99%E4%BA%A7%E5%93%81%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3/"/>
-    <id>http://yoursite.com/2017/05/11/用Axure写产品需求文档/</id>
-    <published>2017-05-11T08:09:03.000Z</published>
-    <updated>2017-06-17T08:11:16.356Z</updated>
-    
-    <content type="html"><![CDATA[<p>链接如下：</p>
-<p><a href="http://www.jianshu.com/p/2006f660d2b0" target="_blank" rel="external">http://www.jianshu.com/p/2006f660d2b0</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;链接如下：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/2006f660d2b0&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/2006f660d2b0&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Axure" scheme="http://yoursite.com/categories/Axure/"/>
-    
-    
-      <category term="Axure" scheme="http://yoursite.com/tags/Axure/"/>
-    
-  </entry>
-  
-  <entry>
     <title>前端进阶文章目录</title>
     <link href="http://yoursite.com/2017/05/11/%E5%89%8D%E7%AB%AF%E8%BF%9B%E9%98%B6%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95/"/>
     <id>http://yoursite.com/2017/05/11/前端进阶文章目录/</id>
@@ -359,6 +373,31 @@
       <category term="Promise" scheme="http://yoursite.com/tags/Promise/"/>
     
       <category term="Jquery" scheme="http://yoursite.com/tags/Jquery/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用Axure写产品需求文档</title>
+    <link href="http://yoursite.com/2017/05/11/%E7%94%A8Axure%E5%86%99%E4%BA%A7%E5%93%81%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3/"/>
+    <id>http://yoursite.com/2017/05/11/用Axure写产品需求文档/</id>
+    <published>2017-05-11T08:09:03.000Z</published>
+    <updated>2017-06-17T08:11:16.356Z</updated>
+    
+    <content type="html"><![CDATA[<p>链接如下：</p>
+<p><a href="http://www.jianshu.com/p/2006f660d2b0" target="_blank" rel="external">http://www.jianshu.com/p/2006f660d2b0</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;链接如下：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/2006f660d2b0&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/2006f660d2b0&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Axure" scheme="http://yoursite.com/categories/Axure/"/>
+    
+    
+      <category term="Axure" scheme="http://yoursite.com/tags/Axure/"/>
     
   </entry>
   
@@ -776,41 +815,6 @@
   </entry>
   
   <entry>
-    <title>产品经理的职业修养</title>
-    <link href="http://yoursite.com/2016/09/15/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E7%9A%84%E8%81%8C%E4%B8%9A%E4%BF%AE%E5%85%BB/"/>
-    <id>http://yoursite.com/2016/09/15/产品经理的职业修养/</id>
-    <published>2016-09-14T16:00:00.000Z</published>
-    <updated>2017-06-17T07:30:08.479Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>序：学道客，修养莫迟迟，光景斯须如梦里。</strong></p>
-<h2 id="8句话"><a href="#8句话" class="headerlink" title="8句话"></a>8句话</h2><p>诚实。</p>
-<p>有所长有所短。</p>
-<p>对产品有信心并且做好了长期吃苦的思想准备。</p>
-<p>能够在行进中不断开火，而不是纸上谈兵。<br><a id="more"></a></p>
-<p>愿意倾听用户的意见和其他人善意的建议。</p>
-<p>不推卸责任。</p>
-<p>不会认为理论上可行就等于彻底搞定。</p>
-<p>不会去浪费时间重新发明轮子。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;序：学道客，修养莫迟迟，光景斯须如梦里。&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;8句话&quot;&gt;&lt;a href=&quot;#8句话&quot; class=&quot;headerlink&quot; title=&quot;8句话&quot;&gt;&lt;/a&gt;8句话&lt;/h2&gt;&lt;p&gt;诚实。&lt;/p&gt;
-&lt;p&gt;有所长有所短。&lt;/p&gt;
-&lt;p&gt;对产品有信心并且做好了长期吃苦的思想准备。&lt;/p&gt;
-&lt;p&gt;能够在行进中不断开火，而不是纸上谈兵。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="产品经理" scheme="http://yoursite.com/categories/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
-    
-    
-      <category term="产品经理" scheme="http://yoursite.com/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
     <title>让创业团队拧成一股绳的不败法则</title>
     <link href="http://yoursite.com/2016/09/15/%E8%AE%A9%E5%88%9B%E4%B8%9A%E5%9B%A2%E9%98%9F%E6%8B%A7%E6%88%90%E4%B8%80%E8%82%A1%E7%BB%B3%E7%9A%84%E4%B8%8D%E8%B4%A5%E6%B3%95%E5%88%99/"/>
     <id>http://yoursite.com/2016/09/15/让创业团队拧成一股绳的不败法则/</id>
@@ -856,6 +860,41 @@
     </summary>
     
       <category term="释放团队力量" scheme="http://yoursite.com/categories/%E9%87%8A%E6%94%BE%E5%9B%A2%E9%98%9F%E5%8A%9B%E9%87%8F/"/>
+    
+    
+      <category term="产品经理" scheme="http://yoursite.com/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>产品经理的职业修养</title>
+    <link href="http://yoursite.com/2016/09/15/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E7%9A%84%E8%81%8C%E4%B8%9A%E4%BF%AE%E5%85%BB/"/>
+    <id>http://yoursite.com/2016/09/15/产品经理的职业修养/</id>
+    <published>2016-09-14T16:00:00.000Z</published>
+    <updated>2017-06-17T07:30:08.479Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>序：学道客，修养莫迟迟，光景斯须如梦里。</strong></p>
+<h2 id="8句话"><a href="#8句话" class="headerlink" title="8句话"></a>8句话</h2><p>诚实。</p>
+<p>有所长有所短。</p>
+<p>对产品有信心并且做好了长期吃苦的思想准备。</p>
+<p>能够在行进中不断开火，而不是纸上谈兵。<br><a id="more"></a></p>
+<p>愿意倾听用户的意见和其他人善意的建议。</p>
+<p>不推卸责任。</p>
+<p>不会认为理论上可行就等于彻底搞定。</p>
+<p>不会去浪费时间重新发明轮子。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;序：学道客，修养莫迟迟，光景斯须如梦里。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;8句话&quot;&gt;&lt;a href=&quot;#8句话&quot; class=&quot;headerlink&quot; title=&quot;8句话&quot;&gt;&lt;/a&gt;8句话&lt;/h2&gt;&lt;p&gt;诚实。&lt;/p&gt;
+&lt;p&gt;有所长有所短。&lt;/p&gt;
+&lt;p&gt;对产品有信心并且做好了长期吃苦的思想准备。&lt;/p&gt;
+&lt;p&gt;能够在行进中不断开火，而不是纸上谈兵。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="产品经理" scheme="http://yoursite.com/categories/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
     
     
       <category term="产品经理" scheme="http://yoursite.com/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/"/>
