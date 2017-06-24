@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="算法," />
 
 
 
@@ -95,15 +95,20 @@
 
 
 
-<meta name="description" content="德智体全面发展的幼年狮">
-<meta property="og:type" content="website">
-<meta property="og:title" content="godkun的博客">
-<meta property="og:url" content="http://yoursite.com/categories/Axure/index.html">
+<meta name="description" content="概念动态规划方案通常会用一个数组来建立一张表，用于存放被分解众多子问题的解。当算法执行完毕，最终的解将会在这个表中很明显的地方找到。 动态规划与递归的联系联系：动态规划有时被认为是一种与递归相反的技术。递归是从顶部开始将问题分解，通过解决掉所有分解出小问题的方式，来解决整个问题。动态规划解决方案从底部开始解决问题，将所有小问题解决掉，然后合并成一个整体方案，从而解决掉整个大问题。 使用思路 使用动">
+<meta name="keywords" content="算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS之动态规划">
+<meta property="og:url" content="http://yoursite.com/2017/06/23/JS之动态规划/index.html">
 <meta property="og:site_name" content="godkun的博客">
-<meta property="og:description" content="德智体全面发展的幼年狮">
+<meta property="og:description" content="概念动态规划方案通常会用一个数组来建立一张表，用于存放被分解众多子问题的解。当算法执行完毕，最终的解将会在这个表中很明显的地方找到。 动态规划与递归的联系联系：动态规划有时被认为是一种与递归相反的技术。递归是从顶部开始将问题分解，通过解决掉所有分解出小问题的方式，来解决整个问题。动态规划解决方案从底部开始解决问题，将所有小问题解决掉，然后合并成一个整体方案，从而解决掉整个大问题。 使用思路 使用动">
+<meta property="og:image" content="http://yoursite.com/images/dynamicPlan2.png">
+<meta property="og:image" content="http://yoursite.com/images/dynamicPlan1.png">
+<meta property="og:updated_time" content="2017-06-24T10:24:21.284Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="godkun的博客">
-<meta name="twitter:description" content="德智体全面发展的幼年狮">
+<meta name="twitter:title" content="JS之动态规划">
+<meta name="twitter:description" content="概念动态规划方案通常会用一个数组来建立一张表，用于存放被分解众多子问题的解。当算法执行完毕，最终的解将会在这个表中很明显的地方找到。 动态规划与递归的联系联系：动态规划有时被认为是一种与递归相反的技术。递归是从顶部开始将问题分解，通过解决掉所有分解出小问题的方式，来解决整个问题。动态规划解决方案从底部开始解决问题，将所有小问题解决掉，然后合并成一个整体方案，从而解决掉整个大问题。 使用思路 使用动">
+<meta name="twitter:image" content="http://yoursite.com/images/dynamicPlan2.png">
 
 
 
@@ -131,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/Axure/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/06/23/JS之动态规划/"/>
 
 
 
 
 
-  <title>分类: Axure | godkun的博客</title>
+  <title>JS之动态规划 | godkun的博客</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -173,7 +178,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -311,45 +316,190 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h1>Axure<small>分类</small>
-      </h1>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-tags,categories" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/11/用Axure写产品需求文档/" itemprop="url">
-              
-                <span itemprop="name">用Axure写产品需求文档</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-11T16:09:03+08:00"
-              content="2017-05-11" >
-          05-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-tags,categories " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/23/JS之动态规划/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="杨昆">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="godkun的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">JS之动态规划</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-23T19:44:58+08:00">
+                2017-06-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JS世界里的算法/" itemprop="url" rel="index">
+                    <span itemprop="name">JS世界里的算法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>动态规划方案通常会用一个数组来建立一张表，用于存放被分解众多子问题的解。当算法执行完毕，最终的解将会在这个表中很明显的地方找到。</p>
+<h2 id="动态规划与递归的联系"><a href="#动态规划与递归的联系" class="headerlink" title="动态规划与递归的联系"></a>动态规划与递归的联系</h2><p>联系：动态规划有时被认为是一种与递归相反的技术。<br>递归是从顶部开始将问题分解，通过解决掉所有分解出小问题的方式，来解决整个问题。<br>动态规划解决方案从底部开始解决问题，将所有小问题解决掉，然后合并成一个整体方案，从而解决掉整个大问题。</p>
+<h2 id="使用思路"><a href="#使用思路" class="headerlink" title="使用思路"></a>使用思路</h2><blockquote>
+<p>使用动态规划设计的算法应该从它能解决的最简单的子问题开始，继而通过得到的解，去解决其他更复杂的子问题，直到整个问题都被解决。所有子问题的解通常被存储在一个数组里以便于访问。</p>
+</blockquote>
+<h2 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h2><a id="more"></a>    
+<p>用斐波那契数列做例子。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> dynFib(n) &#123;</div><div class="line">	</div><div class="line">	// 定义val数组来保存中间结果</div><div class="line">	var val = []</div><div class="line">	<span class="keyword">for</span> (var i = 0; i &lt;= n; i++) &#123;</div><div class="line">		val[i] = 0;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	// 如果斐波那契数是1或者2，则返回1</div><div class="line">	<span class="keyword">if</span> (n==1 || n==2) &#123;</div><div class="line">		<span class="built_in">return</span> 1;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	// 否则，把数值1和2保存在val数组中1和2的位置</div><div class="line">	<span class="keyword">else</span>&#123;</div><div class="line">		val[1] = 1;</div><div class="line">		val[2] = 2;</div><div class="line">	</div><div class="line">	// 从3开始，将数组中的每个元素赋值为前两个元素只和，直到循环结束</div><div class="line">		<span class="keyword">for</span> (var i = 3; i &lt;= n ; i++) &#123;</div><div class="line">			val[i] = val[i-1] + val[i-2];</div><div class="line">		&#125;</div><div class="line">		</div><div class="line">		// 返回数组的最后一个元素即为最终计算的斐波那契数值</div><div class="line">		<span class="built_in">return</span> val[n-1];</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">var start = new Date().getTime();</div><div class="line"></div><div class="line">console.log(dynFib(30));</div><div class="line">var stop = new Date().getTime();</div><div class="line"></div><div class="line">var result = stop - start;</div><div class="line">console.log(<span class="string">"用时为： "</span>+result+<span class="string">"毫秒"</span>);</div></pre></td></tr></table></figure></p>
+<p>输出如下<br><img src="/images/dynamicPlan2.png" alt=""></p>
+<h2 id="心得体会"><a href="#心得体会" class="headerlink" title="心得体会"></a>心得体会</h2><p>更深刻的理解了递归的效率为什么很低，就是因为有太多值在递归调用中被重新计算。<br>下面一张图就可以说明它的工作效率为什么这么差。<br><img src="/images/dynamicPlan1.png" alt=""><br>上图是斐波那契函数生成的递归树，从图中就可以看出重复计算了很多值。</p>
+<blockquote>
+<p>如果编译器可以将已经计算的值记录下来，函数的执行效率就不会很差。动态规划就是用一个数组来存储已经计算过的值，以此来提高效率。</p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/算法/" rel="tag"># 算法</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/06/23/JS算法之二分法查找/" rel="next" title="JS算法之二分查找算法">
+                <i class="fa fa-chevron-left"></i> JS算法之二分查找算法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/06/24/JS之贪心算法/" rel="prev" title="JS之贪心算法">
+                JS之贪心算法 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -357,6 +507,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -376,8 +530,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpg"
@@ -475,6 +638,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概念"><span class="nav-number">1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态规划与递归的联系"><span class="nav-number">2.</span> <span class="nav-text">动态规划与递归的联系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用思路"><span class="nav-number">3.</span> <span class="nav-text">使用思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码如下"><span class="nav-number">4.</span> <span class="nav-text">代码如下</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#心得体会"><span class="nav-number">5.</span> <span class="nav-text">心得体会</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -620,10 +799,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
