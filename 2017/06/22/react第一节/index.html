@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -95,17 +95,17 @@
 
 
 
-<meta name="description" content="React 的核心思想通过组件来开发应用。 组件所谓组件，指的是能完成某个特定功能的独立的、重用的代码。 基于组件的应用开发是广泛使用的软件开发模式。 JSX全称：JavaScript eXtension目的：让我们可以在JS中编写像HTML一样的代码。一种JavaScript的数据结构，不是真正的HTML，也和DOM没有关系，其实就是React.createElement写法的语法糖，是快速高效">
+<meta name="description" content="命名由来 React践行的是“响应式编程”思想，也就是 Reactive Programing  React 的核心思想通过组件来开发应用。 组件所谓组件，指的是能完成某个特定功能的独立的、重用的代码。 基于组件的应用开发是广泛使用的软件开发模式。 JSX全称：JavaScript eXtension目的：让我们可以在JS中编写像HTML一样的代码。一种JavaScript的数据结构，不是真正的H">
 <meta name="keywords" content="react">
 <meta property="og:type" content="article">
 <meta property="og:title" content="react第一节">
 <meta property="og:url" content="http://yoursite.com/2017/06/22/react第一节/index.html">
 <meta property="og:site_name" content="godkun的博客">
-<meta property="og:description" content="React 的核心思想通过组件来开发应用。 组件所谓组件，指的是能完成某个特定功能的独立的、重用的代码。 基于组件的应用开发是广泛使用的软件开发模式。 JSX全称：JavaScript eXtension目的：让我们可以在JS中编写像HTML一样的代码。一种JavaScript的数据结构，不是真正的HTML，也和DOM没有关系，其实就是React.createElement写法的语法糖，是快速高效">
-<meta property="og:updated_time" content="2017-06-23T05:46:49.656Z">
+<meta property="og:description" content="命名由来 React践行的是“响应式编程”思想，也就是 Reactive Programing  React 的核心思想通过组件来开发应用。 组件所谓组件，指的是能完成某个特定功能的独立的、重用的代码。 基于组件的应用开发是广泛使用的软件开发模式。 JSX全称：JavaScript eXtension目的：让我们可以在JS中编写像HTML一样的代码。一种JavaScript的数据结构，不是真正的H">
+<meta property="og:updated_time" content="2017-06-25T18:48:58.006Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="react第一节">
-<meta name="twitter:description" content="React 的核心思想通过组件来开发应用。 组件所谓组件，指的是能完成某个特定功能的独立的、重用的代码。 基于组件的应用开发是广泛使用的软件开发模式。 JSX全称：JavaScript eXtension目的：让我们可以在JS中编写像HTML一样的代码。一种JavaScript的数据结构，不是真正的HTML，也和DOM没有关系，其实就是React.createElement写法的语法糖，是快速高效">
+<meta name="twitter:description" content="命名由来 React践行的是“响应式编程”思想，也就是 Reactive Programing  React 的核心思想通过组件来开发应用。 组件所谓组件，指的是能完成某个特定功能的独立的、重用的代码。 基于组件的应用开发是广泛使用的软件开发模式。 JSX全称：JavaScript eXtension目的：让我们可以在JS中编写像HTML一样的代码。一种JavaScript的数据结构，不是真正的H">
 
 
 
@@ -113,7 +113,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Mist',
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
     motion: true,
@@ -414,7 +414,10 @@
       
 
       
-        <h2 id="React-的核心思想"><a href="#React-的核心思想" class="headerlink" title="React 的核心思想"></a>React 的核心思想</h2><p><strong>通过组件来开发应用。</strong></p>
+        <h2 id="命名由来"><a href="#命名由来" class="headerlink" title="命名由来"></a>命名由来</h2><blockquote>
+<p>React践行的是“响应式编程”思想，也就是 Reactive Programing</p>
+</blockquote>
+<h2 id="React-的核心思想"><a href="#React-的核心思想" class="headerlink" title="React 的核心思想"></a>React 的核心思想</h2><p><strong>通过组件来开发应用。</strong></p>
 <h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><p>所谓组件，指的是能完成某个特定功能的独立的、重用的代码。</p>
 <p><strong>基于组件的应用开发是广泛使用的软件开发模式。</strong></p>
 <h2 id="JSX"><a href="#JSX" class="headerlink" title="JSX"></a>JSX</h2><p>全称：JavaScript eXtension<br>目的：让我们可以在JS中编写像HTML一样的代码。<br>一种JavaScript的数据结构，不是真正的HTML，也和DOM没有关系，其实就是React.createElement写法的语法糖，是快速高效书写这个函数的方法，它返回的是ReactElement。</p>
@@ -427,6 +430,7 @@
 <blockquote>
 <p>DOM树是对HTML的抽象，那Virtual DOM就是对DOM树的抽象。组件的DOM结构映射到虚拟DOM上，当需要重新渲染组件时，React在虚拟DOM上实现了一个 Diff 算法，通过这个算法寻找需要变更的节点，再把里面的修改更新到实际需要修改的DOM节点上，这样就避免了整个渲染DOM带来的巨大成本。</p>
 </blockquote>
+<p>## </p>
 
       
     </div>
@@ -553,7 +557,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">25</span>
+                <span class="site-state-item-count">28</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -564,7 +568,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-count">15</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -575,7 +579,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-count">17</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -646,7 +650,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#React-的核心思想"><span class="nav-number">1.</span> <span class="nav-text">React 的核心思想</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#组件"><span class="nav-number">2.</span> <span class="nav-text">组件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSX"><span class="nav-number">3.</span> <span class="nav-text">JSX</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Babel"><span class="nav-number">4.</span> <span class="nav-text">Babel</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Virtual-DOM-【虚拟DOM】"><span class="nav-number">5.</span> <span class="nav-text">Virtual DOM 【虚拟DOM】</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#命名由来"><span class="nav-number">1.</span> <span class="nav-text">命名由来</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React-的核心思想"><span class="nav-number">2.</span> <span class="nav-text">React 的核心思想</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#组件"><span class="nav-number">3.</span> <span class="nav-text">组件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSX"><span class="nav-number">4.</span> <span class="nav-text">JSX</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Babel"><span class="nav-number">5.</span> <span class="nav-text">Babel</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Virtual-DOM-【虚拟DOM】"><span class="nav-number">6.</span> <span class="nav-text">Virtual DOM 【虚拟DOM】</span></a></li></ol></div>
             
 
           </div>
@@ -684,7 +688,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
+    NexT.Mist
   </a>
 </div>
 
@@ -788,13 +792,6 @@
 
   
   
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
-
-
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
